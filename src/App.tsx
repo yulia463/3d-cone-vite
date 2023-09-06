@@ -120,7 +120,7 @@ const App: React.FC = () => {
                 </div>
             </div>
             <label className="checkbox">
-                <input type="checkbox" checked={segments >= 360} onChange={handleCheckboxChange}/>
+                <input type="checkbox" checked={Boolean(segments && segments >= 360)} onChange={handleCheckboxChange}/>
                 Дополнительное задание (гладкий конус)
             </label>
             <button
